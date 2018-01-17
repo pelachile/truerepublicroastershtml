@@ -1,0 +1,115 @@
+// bower:scss
+// endbower
+@import "variables";
+
+.browserupgrade {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0 .5em;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.sidenav {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background: #37374b; //$republic-navy;
+  flex-grow: 1;
+  order: 0;
+
+  h2 {
+    color: #fff; //$white;
+    display: inline;
+    font-size: 1.8em;
+    letter-spacing: .1em;
+    margin: 0 0 0 6rem;
+    padding: .1em 1em;
+    text-align: center;
+    word-spacing: .2em;
+
+  }
+
+  .republic-orange {
+    color: $republic-orange;
+  }
+
+  .main-nav {
+    float: right;
+    padding-right: 1em;
+    ul {
+      line-height: .1em;
+      li {
+        border-right: 2px solid $white;
+        color: white;
+        display: inline;
+        font-size: 1.5rem;
+        padding-right: .3em;
+      }
+      li:last-child {
+        border: none;
+      }
+
+    }
+  }
+}
+
+.hero-unit {
+  background: url("../images/HeaderImage.png"), url("../images/header-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center 25rem;
+  background-size: contain, cover;
+  height: 80vh;
+
+  h1 {
+    font-size: 3em;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+.product-card {
+  margin-top: 4rem;
+  padding: 1rem;
+  img {
+    width: 50%;
+    height: auto;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2em;
+    .product-button {
+      border-radius: .5rem;
+      box-shadow: 2px 3px #d3d3d3;
+      color: $white;
+      display: block;
+      font-size: 2rem;
+      margin: 2rem auto;
+      padding: 1rem;
+      position: relative;
+      width: 70%;
+    }
+  }
+}
+
+//@import "phone-retina";
+@import "phone-ios";
+@import "phone-android";
+@import "tablet";

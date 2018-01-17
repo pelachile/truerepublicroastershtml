@@ -1,0 +1,36 @@
+$republic-navy: #37374b;
+$republic-orange: #D13f40;
+$deviant: #871618;
+$pleasant: #007e79;
+$white: #fff;
+
+.deviant {
+  h2 {
+    color: $deviant;
+  }
+  .product-button {
+    background: $deviant;
+    border: 1px solid darken($deviant, 20%);
+  }
+}
+.pleasant {
+  h2 {
+    color: $pleasant;
+  }
+  .product-button {
+    background: $pleasant;
+    border: 1px solid darken($pleasant, 20%);
+  }
+  }
+
+.left {
+  img {
+    float: left;
+  }
+}
+
+.right {
+  img {
+    float: right;
+  }
+}

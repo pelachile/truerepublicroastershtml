@@ -1,0 +1,111 @@
+@import "variables";
+@media only screen and (min-device-width: 320px)
+  and (max-device-width: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+{
+  @import "side-nav";
+  .container {
+
+    .top-bar {
+      text-align: center;
+      .main-nav {
+        display: none;
+      }
+      padding: 0;
+      h2 {
+        font-size: 1rem;
+        line-height: 2rem;
+        word-spacing: 0;
+      }
+
+    }
+    .hero-unit {
+      background-position: center center, center 4.5rem;
+      background-size: contain, cover;
+      margin: 2em auto;
+      height: 25vh;
+      width: 100%;
+
+      h1 {
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        line-height: 1;
+        margin-top: -.5em;
+      }
+    }
+    .product-card {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .product-card {
+    img {
+      float: none;
+      margin-bottom: 1rem;
+    }
+    margin-top: 4rem;
+    padding: 1rem;
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      .product-button {
+        border-radius: .5rem;
+        box-shadow: 2px 3px #d3d3d3;
+        color: $white;
+        display: block;
+        font-size: 2rem;
+        margin: 2rem auto;
+        padding: 1rem;
+        position: relative;
+        width: 70%;
+      }
+    }
+  }
+}
+@media only screen and (min-device-width: 320px)
+and (max-device-width: 640px)
+and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape)
+{
+  @import "side-nav";
+  .container {
+
+    .top-bar {
+      .main-nav {
+        display: none;
+      }
+      padding: 0;
+      h2 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-left: 7rem;
+        word-spacing: 0;
+        text-align: center;
+      }
+
+    }
+    .hero-unit {
+      background-position: center center, center 4.5rem;
+      background-size: contain, cover;
+      margin: 2em auto;
+      height: 50vh;
+      width: 100%;
+
+      h1 {
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        line-height: 1;
+        margin-top: -.5em;
+      }
+    }
+    .product-card {
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
